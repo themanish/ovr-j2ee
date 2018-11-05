@@ -1,0 +1,152 @@
+* {
+	margin: 0; padding: 0;
+}
+/* Define Font-Face */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(fonts/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+}
+/* OR 
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+*/
+
+/* COLORS
+black => #1D1D1D
+yellow => #FFD540
+yellow-light => #FFF7D9
+white => #FFFFFF
+Light Grey => #F6F6F6
+Dark Grey => #E4E4E4
+*/
+
+/* Global Styles */
+
+body {
+	margin:0; padding: 0;
+    font-size: 14px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color:#000000;
+	background-color: #FFF7D9;
+}
+
+a {color:#1D1D1D; text-decoration:none; outline:none;}
+a:focus, a:hover {outline: 0; text-decoration: none;}
+
+.right {float:right;}
+.left {float:left;}
+.clear {clear: both;}
+
+.text-danger {color: red;}
+.text-success {color: green;}
+.text-warning {color: orange;}
+.text-primary {color: blue;}
+
+.alert-danger {
+	padding: 15px;
+  border: 1px solid red;
+  background: #FFe8FF;
+  color: red;
+  width: 97%;
+}
+
+.alert-success {
+	padding: 15px;
+  border: 1px solid green;
+  background: #a0ff9a;
+  color: green;
+  width: 97%;
+}
+
+#left-bar {
+	width: 17%;
+	min-width: 200px;
+	background: #FFD540;
+	min-height: 800px;
+	float: left;
+	margin-right: 30px;
+}
+
+#left-bar #logo {
+	padding: 20px;
+}
+
+#left-bar #logo h1 {
+	font-size: 32px;
+}
+
+#left-bar #logo h1 span {
+font-size: 20px;
+  color: #777;
+  margin-left: -5px;
+  text-transform: uppercase;
+  font-style: italic; 
+}
+
+#left-bar #logo p {
+	font-size: 38px;
+  font-stretch: ultra-condensed;
+}
+#owner-navbar ul li {
+	list-style: none;
+}
+
+#owner-navbar ul li a {
+	display: block;
+  padding: 20px 0 20px 30px;
+  font-size: 24px;
+  font-family: fantasy;
+  font-variant: small-caps;
+}
+
+
+
+#owner-navbar ul li a:hover, #owner-navbar ul li a.active {
+	background: #FFAF20;
+}
+
+#content {
+	width: 75%;
+	float: left;
+	margin-top: 62px;
+}
+
+#content #header {
+	height: 100px;
+}	
+
+#main-content .main-content-header {
+	border-bottom: 1px solid #000;
+	padding-bottom: 20px;
+}
+
+#main-content .main-content-header h1 {
+	font-family: fantasy;
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+
+.review {
+  padding: 10px;
+  background-color: #eed;
+}
+
+.review-by {
+  float: right;
+}
+
+.review-by h2 {
+  font-size: 16px;
+}
+
+.review-by span {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.logged-in-as {
+  padding: 10px 29px;
+  background-color: #FFF895;
+}

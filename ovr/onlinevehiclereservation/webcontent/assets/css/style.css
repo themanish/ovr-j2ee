@@ -1,0 +1,429 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* Define Font-Face */
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Raleway'), url(fonts/IczWvq5y_Cwwv_rBjOtT0w.woff)
+		format('woff');
+}
+/* OR 
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+*/
+
+/* COLORS
+black => #1D1D1D
+yellow => #ffd540
+light yellow => #FFE68C
+white => #FFFFFF
+Light Grey => #F6F6F6
+Dark Grey => #E4E4E4
+*/
+
+/* Global Styles */
+body {
+	/* background: url(../images/bg.png) repeat-x #FFFFFF; */
+	border-top: 5px solid #999;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+a {
+	color: #444;
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus, a:hover {
+	outline: 0;
+	text-decoration: none;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.hr {
+	border-bottom: 2px solid #1D1D1D;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.text-danger {
+	color: red;
+}
+.text-success {
+	color: green;
+}
+.alert-danger {
+	padding: 15px;
+  border: 1px solid red;
+  background: #FFe8FF;
+  color: red;
+  width: 97%;
+}
+
+.alert-success {
+	padding: 15px;
+  border: 1px solid green;
+  background: #a0ff9a;
+  color: green;
+  width: 97%;
+}
+
+/* Page Layout */
+#header {
+	border-bottom: 3px solid #FFb540;
+}
+
+#content {
+	margin: 20px auto;
+	width: 960px;
+	min-height: 400px;
+}
+
+/* Site Logo */
+#logo {
+	margin: 0 auto;
+}
+
+#logo h1 {
+	padding: 15px 0;
+	font-size: 35px;
+}
+
+/* Site Navigation Bar */
+#nav-bar {
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	padding-top: 10px;
+	border-bottom: 1px solid #ccc;
+	background-color: #eff;
+}
+
+#nav-bar ul {
+	text-align: center;
+	height: 40px;
+	padding: 0;
+	position: relative;
+}
+
+#nav-bar ul > li {
+	display: inline-block;
+	padding: 0 0 0 20px;
+	list-style: none;
+}
+
+#nav-bar ul li a {
+	font-size: 16px;
+	padding: 5px 20px;
+}
+
+#nav-bar ul li a:hover {
+	background-color: #FFb540;
+	color: #fff;
+}
+
+#nav-bar ul li a.active {
+	background-color: #FFb540;
+	color: #fff;
+}
+
+#nav-bar ul ul {
+	display: none;
+	position: absolute;
+}
+
+#nav-bar ul li:hover > ul {
+	display: block;
+	z-index: 9;
+  	padding-top: 18px;
+}
+
+#nav-bar ul ul li {
+	float: none; 
+	background: #EEFFFF;
+	border-bottom: 1px solid #FFD540;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+#nav-bar ul ul li a {
+	width: 100%;
+}
+
+#nav-bar ul ul li a:hover {
+	cursor: pointer;
+}
+
+
+
+#content h2 {
+	border-bottom: 2px solid #FFD540;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+#content h2 a {
+	font-size: 13px;
+}
+
+/* Slider */
+#slider img {
+	width: 100%;
+	height: 440px;
+}
+
+#slider .search-box {
+	height: 45px;
+	width: 835px;
+	position: absolute;
+	left: 280px;
+	top: 285px;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+
+#slider .search-box .journey-input {
+	padding: 10px 15px;
+	width: 25%;
+}
+
+#slider .search-box .journey-input-date {
+	padding: 10px 15px;
+	width: 120px;
+}
+
+#slider .search-box button {
+	background-color: #ffd540;
+	padding: 10px 15px;
+}
+
+/* quick nav */
+#quick-nav {
+	width: 960px;
+	margin: 10px auto;
+}
+
+#quick-nav #featured-box {
+	width: 620px;
+	border-right: 2px solid #000;
+	padding-right: 5px;
+	float: left;
+}
+
+#quick-nav #featured-box h2, #vehicle-owner-login h2 {
+	padding: 8px 7px;
+	background: #FFD540;
+	margin-bottom: 10px;
+}
+
+#quick-nav #featured-box h2 span, #vehicle-owner-login h2 span {
+	display: block;
+	font-size: 12px;
+}
+
+#quick-nav #featured-box .vehicle-image {
+	width: 270px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+}
+
+#vehicle-owner-login {
+	width: 328px;
+	float: right;
+}
+
+#vehicle-owner-login #login-form table {
+	margin: 0 auto;
+	width: 80%;
+}
+
+#vehicle-owner-login #login-form .buttons {
+	padding-top: 10px;
+}
+
+#vehicle-owner-login #login-form .buttons button {
+	background-color: #FFD540;
+	padding: 5px;
+	width: 49%;
+}
+
+/* Contact */
+#contact-form {
+	width: 600px;
+	float: left;
+}
+
+#contact-details {
+	width: 360px;
+	float: right;
+}
+
+/* Footer */
+#footer {
+	width: 100%;
+	height: 50px;
+	background: #000;
+}
+
+#footer-container {
+	width: 960px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+#footer-container div {
+	float: left
+}
+
+#footer-container #copy-text {
+	margin: 20px 0 0 10px;
+}
+
+#footer-container #social-buttons {
+	margin: 5px 0 5px 125px;
+}
+
+#footer-container #design-by {
+	margin: 20px 10px 0 0;
+	float: right;
+}
+
+#social-buttons {
+	width: 150px;
+}
+
+#social-buttons a {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-indent: -9999px;
+	margin-right: 5px;
+}
+
+/* Search Page */
+#quote-form-sidebar {
+	width: 300px;
+	margin-right: 20px;
+	float: left;
+}
+
+#search-results {
+	width: 640px;
+	float: right;
+}
+
+#search-results .result-item {
+	width: 620px;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+#search-results img {
+	width: 98%;
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+
+#search-results .result-item img {
+	width: 198px;
+	margin-right: 10px;
+	float: left;
+}
+
+#search-results img {
+	padding: 5px;
+	border: 1px solid #ddd;
+}
+
+.result-item-details {
+	width: 400px;
+	float: right;
+}
+
+a.facebook {
+	background-image: url(../images/social-buttons/facebook.png);
+}
+
+a.facebook:hover {
+	background-image: url(../images/social-buttons/facebook-hover.png);
+}
+
+a.gplus {
+	background-image: url(../images/social-buttons/gplus.png);
+}
+
+a.gplus:hover {
+	background-image: url(../images/social-buttons/gplus-hover.png);
+}
+
+a.twitter {
+	background-image: url(../images/social-buttons/twitter.png);
+}
+
+a.twitter:hover {
+	background-image: url(../images/social-buttons/twitter-hover.png);
+}
+
+/* Override Classes */
+.bx-wrapper .bx-viewport {
+	border: none !important;
+}
+
+.buttons {
+	margin-top: 25px;
+}
+
+.user-login-form {
+	width: 350px;
+	margin: 0 auto;
+}
+
+.user-login-form label{
+	margin: 10px 0;
+	display: block;
+}
+
+.user-login-form button {
+	margin: 10px 0 0 10px;
+	width: 47%;
+	float: left;
+}
+
+.booking-details-car-image {
+	width: 450px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+#login-form-owner {
+	width: 500px;
+	margin: 0 auto;
+}
